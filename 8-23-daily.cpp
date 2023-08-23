@@ -3,22 +3,7 @@
 using namespace std;
 
 int main() {
-    /* 
-    VARIABLE TYPES:
-        int (or 'long int' for bigger numbers)
-        float
-        double //size of 2 floats, does same thing
-        char //single character, 1 byte; pi to the smth
-        string //lots of characters! In "sommething"
-
-    SOME EXAMPLES:
-        float bill = 34.99;
-        char middle = 'A';
-        string fName = "Bill";
-        string lName = "Smith";
-        cout << fName << " " << middle << ". " << lName << " Amount: $" << bill;
-    */
-
+// Define variables for professor names and info as specified by the assignment
     string fName = "John";
     string lName = "Stanley";
     char middle = 'B';
@@ -27,6 +12,9 @@ int main() {
     int room = 3107;
     float fee = 10.00;
 
+// Print the title of the line (Professor:, Class:, etc) with variables appended
+// Add spaces and periods as needed using the << symbol 
+// Create a new line at the end of each to space information out
     cout << "Professor: " << fName << " " << middle << ". " << lName << endl;
     cout << "Class: " << "\"Introduction to Statistics\"" << endl;
     cout << "Class code: " << "STA 150" << endl;
@@ -35,13 +23,18 @@ int main() {
     cout << "Time: " << "MWF 5:00-6:00" << endl;
     cout << "Lab fee : " << "$" << fee << endl;
     
+// Update variables for the new professor and their information
     fName = "Jan";
     lName = "Cruise";
     building = "Stockton";
     room = 121;
     fee = 25.00;
+// Print 2 new lines to create a space between the professors' classes
     cout << "\n\n";
     
+// Mimic the first section and print this professor's information
+// Manually update lines not stored in variables (class code, class name)
+// Create a new line at the end of each
     cout << "Professor: " << fName << " " << middle << ". " << lName << endl;
     cout << "Class: " << "\"Anatomy and Physiology\"" << endl;
     cout << "Class code: " << "BIO 200" << endl;
