@@ -15,7 +15,7 @@ int main() {
  int zip;
  zip = 41018;
 
- // print out school name, Ignite Institute and end line
+ // print out school name, Ignite Institute, and end line
  cout << "Ignite Institute" << endl;
 
  // Add the box name, street name, and the word "Avenue" together to create 37 Atlantic Avenue, then end line
