@@ -7,6 +7,7 @@
 using namespace std;
 
 int main() {
+	// Define all variables as strings so they're compatible with getline()
 	string fname,
 		lname,
 		address,
@@ -15,7 +16,7 @@ int main() {
 		middle,
 		zip;
 
-	// getline() requires string; middle should be char, zip should be int
+	// Ask questions and use getline() to set user input to appropriate variables
 	cout << "Please enter your first name: ";
 	getline(cin, fname);
 	cout << "Please enter your last name: ";
@@ -31,11 +32,15 @@ int main() {
 	cout << "Please enter your zip code: ";
 	getline(cin, zip);
 
+	// Set new variables for the loan calculations remaining
+	// Set loan and interest to a double (to add .00 to the end), then the months as an integer
 	double loan,
 		interest;
 	int duration;
 
+	// Create two new lines for spacing purposes then thank the user for their personal information before filling the remaining variables
 	cout << endl << endl << "Thank you for your personal information!" << endl;
+	// Ask questions to the user and apply their answers to the loan, interest, and duration variables
 	cout << "How much do you want to borrow?: ";
 	cin >> loan;
 	cout << "What is the current ANNUAL interest rate?(ex. 0.12 = 12%): ";
@@ -43,8 +48,8 @@ int main() {
 	cout << "What is the duration of the loan?(in months): ";
 	cin >> duration;
 
-	// SPACING PROBLEMS -- SO MANY SPACING PROBLEMS!!
-	// Spacing will change if you put a longer or shorter input
+	// Print out the calculator with setw() spacing to match the assignment's sample information
+	// Format information as appropriate with spacing between variables and commas
 	cout << endl << "Loan Calculator" << endl;
 	cout << "---------------" << endl;
 	cout << "Name: " << setw(21) << fname << " " << middle << ", " << lname << endl;
@@ -52,20 +57,23 @@ int main() {
 	cout << "City/State: " << setw(16) << city << ", " << state << endl;
 	cout << "Zip code: " << setw(17) << zip << endl << endl;
 
-	// Numbers seem incorrectly rounded? 0.01 off from template
+	// Use the loan variables specified by the user with fixed variables, 2-point precision, and showing 0s at the end
 	cout << "Loan amount: " << setw(10) << "$" << fixed << setprecision(2) << showpoint << loan << endl;
 	cout << "Yearly interest rate: " << fixed << setprecision(2) << showpoint << interest << endl;
 	cout << "Number of payments: " << setw(4) << duration << endl;
 
-	double monthlyinterest = interest/12,
-		payment = loan * ((monthlyinterest*pow((1+monthlyinterest),duration))/(pow((1+monthlyinterest),duration)-1)),
+	// Define calculations based on the above loan variables for the remainder of the program
+	// Use interest format defined by worksheet, then simple math for the rest
+	double monthlyinterest = interest / 12,
+		payment = loan * ((monthlyinterest * pow((1 + monthlyinterest), duration)) / (pow((1 + monthlyinterest), duration) - 1)),
 		payback = payment * duration,
 		paidinterest = payback - loan;
 
+	// Use the calculations completed above, using the same precision and fixed-point formatting, to display the calculation's results
 	cout << "Monthly payment: " << setw(6) << "$" << fixed << setprecision(2) << showpoint << payment << endl;
 	cout << "Amount paid back: " << setw(5) << "$" << fixed << setprecision(2) << showpoint << payback << endl;
 	cout << "Interest paid: " << setw(8) << "$" << fixed << setprecision(2) << showpoint << paidinterest << endl;
 
+	// Fix issues with getline(cin, x) in the program
 	cin.ignore();
-
 }
