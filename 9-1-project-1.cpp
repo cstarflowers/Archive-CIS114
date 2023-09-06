@@ -5,6 +5,7 @@
 #include <cstdlib>
 
 using namespace std;
+// CARSON S. -- CIS114
 
 int main() {
 	// Define all variables as strings so they're compatible with getline()
@@ -63,7 +64,8 @@ int main() {
 	cout << "Number of payments: " << setw(4) << duration << endl;
 
 	// Define calculations based on the above loan variables for the remainder of the program
-	// Use interest format defined by worksheet, then simple math for the rest
+	// Use interest format defined by worksheet, then simple math for the rest 
+	// (ie: interest paid is the total paid minus the original loan)
 	double monthlyinterest = interest / 12,
 		payment = loan * ((monthlyinterest * pow((1 + monthlyinterest), duration)) / (pow((1 + monthlyinterest), duration) - 1)),
 		payback = payment * duration,
