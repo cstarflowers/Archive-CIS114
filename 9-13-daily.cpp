@@ -32,7 +32,7 @@ int main() {
 	else if (rectangle > square) {
 		cout << "The area of the rectangle is larger than the square." << endl;
 	}
-	else if (rectangle < square ) {
+	else if (rectangle < square) {
 		cout << "The area of the square is larger than that of the rectangle." << endl;
 	}
 }
