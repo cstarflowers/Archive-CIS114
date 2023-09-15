@@ -18,7 +18,7 @@ int main() {
 
 	switch (calculator) {
 	case 1: {
-		int radius,
+		double radius,
 			area;
 		cout << "What is the circles radius?: ";
 		cin >> radius;
@@ -28,7 +28,7 @@ int main() {
 		break;
 	}
 	case 2: {
-		int length,
+		double length,
 			width,
 			area;
 		cout << "What is the rectangle's length?: ";
@@ -41,7 +41,7 @@ int main() {
 		break;
 	}
 	case 3: {
-		int base,
+		double base,
 			height,
 			area;
 		
