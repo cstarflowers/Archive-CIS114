@@ -20,6 +20,7 @@ int main() {
 	case 1: {
 		double radius,
 			area;
+		
 		cout << "What is the circles radius?: ";
 		cin >> radius;
 
@@ -31,6 +32,7 @@ int main() {
 		double length,
 			width,
 			area;
+		
 		cout << "What is the rectangle's length?: ";
 		cin >> length;
 		cout << "What is the rectangle's width?: ";
