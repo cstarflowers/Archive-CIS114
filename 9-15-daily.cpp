@@ -14,7 +14,7 @@ int main() {
 	cout << "Enter your choice (1-4): ";
 	cin >> calculator;
 
-	const int PI = 3.14159; // approximated
+	const double PI = 3.14159; // approximated
 
 	switch (calculator) {
 	case 1: {
