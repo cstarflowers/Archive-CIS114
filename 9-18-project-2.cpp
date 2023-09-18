@@ -25,30 +25,27 @@ int main() {
 	double total;
 
 	switch (group) {
-	case 1: {
+	case 1:
 		cout << "How many Tickets do you want? ";
 		cin >> tickets;
 
 		total = (tickets * LOWER_TICKET);
 		cout << "The total amount is $" << fixed << setprecision(2) << total << endl;
 		break;
-	}
-	case 2: {
+	case 2:
 		cout << "How many Tickets do you want? ";
 		cin >> tickets;
 
 		total = (tickets * UPPER_TICKET);
 		cout << "The total amount is $" << fixed << setprecision(2) << total << endl;
 		break;
-	}
-	case 3: {
+	case 3:
 		cout << "How many Tickets do you want? ";
 		cin >> tickets;
 
 		total = (tickets * LUXURY_TICKET);
 		cout << "The total amount is $" << fixed << setprecision(2) << total << endl;
 		break;
-	}
 	case 4:
 		cout << "Program ending." << endl;
 		break;
