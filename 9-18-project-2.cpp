@@ -4,6 +4,8 @@
 #include <math.h>
 
 using namespace std;
+// Carson Stary, CIS114, Ticket Sales (Program 2)
+// A program to calculate the cost of tickets at a venue using user input
 
 int main() {
 	// Define a variable for the selection the user makes, print out possible choices and a prompt
