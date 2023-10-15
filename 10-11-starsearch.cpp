@@ -7,6 +7,7 @@ using namespace std;
 // ---
 // Carson Stary, CIS114, Star Search
 // A program used to calculate a performer's score by averaging the middle 3 of 5 scores (drops highest and lowest)
+// NOTE: THE SUBMITTED VERSION OF THIS PROGRAM DIFFERS FROM THE ARCHIVED VERSION; THIS VERSION HAS UNNECESSARY VARIABLE PASSES REMOVED.
 // ---
 
 // Prototyping for functions used in program
