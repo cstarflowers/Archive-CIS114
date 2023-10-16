@@ -14,11 +14,9 @@ float celcius[INDICES],
 fahrenheit[INDICES];
 
 int main() {
-	for (int h = 0; h < INDICES; h++) {
-		celcius[h] = h;
-	}
-
 	for (int i = 0; i < INDICES; i++) {
+		celcius[i] = i;
+
 		float tempF = convertCelcius(i);
 		cout << fixed << setprecision(1) << showpoint << celcius[i];
 		cout << " degrees celcius converts to " << fixed << setprecision(1) << showpoint << tempF << " degrees fahrenheit." << endl;
