@@ -25,7 +25,7 @@ int main() {
 		letterGrade(studentGrades[i].grade, i);
 	}
 
-	cout << endl << endl << "CIS 114 Grades" << endl << "*************" << endl;
+	cout << endl << endl << "CIS 114 Grades" << endl << "**************" << endl;
 	for (int j = 0; j < USERS; j++) {
 		cout << "Student name: " << studentGrades[j].name << endl;
 		cout << "Average: " << fixed << setprecision(1) << showpoint << studentGrades[j].grade << endl;
