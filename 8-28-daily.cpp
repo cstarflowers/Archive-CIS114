@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// Carson Stary, CIS114
 
 int main() {
 	double total,
