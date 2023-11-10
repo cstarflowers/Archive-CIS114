@@ -3,7 +3,8 @@
 #include <cmath>
 
 using namespace std;
-// NO COMMENTS REQUIRED :3
+// Carson Stary, CIS114
+// No Comments
 
 double payment(int, double, int);
 
