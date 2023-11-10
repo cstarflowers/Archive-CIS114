@@ -2,6 +2,7 @@
 #include <string>
 
 using namespace std;
+// Carson Stary, CIS114
 
 int main() {
 	// Define variables that will be used for width and length as integers
