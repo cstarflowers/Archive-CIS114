@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+// Carson Stary, CIS114
 
 int main() {
  // create box variable and set to 37
