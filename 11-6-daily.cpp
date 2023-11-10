@@ -4,6 +4,7 @@
 #include <cstdlib>
 
 using namespace std;
+// Carson Stary, CIS114
 
 struct movies {
 	string mName;
