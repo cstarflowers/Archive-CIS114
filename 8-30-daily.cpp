@@ -2,7 +2,7 @@
 #include <iomanip>
 #include <string>
 using namespace std;
-// LEX F, YASEMIN O, CARSON S :3
+// LEX F, YASEMIN O, CARSON S
 
 int main() {
 	// Define variables as specified by assignment, using a double for day1/day2/day3 and empty total
