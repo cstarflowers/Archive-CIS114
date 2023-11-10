@@ -5,6 +5,7 @@
 using namespace std;
 // Carson Stary, CIS114, Gettysburg Address
 // A program that counts the total word count of Lincoln's Gettysburg Address, then divides that count into small (5-) and long (6+) words
+// FOR PROPER GETLINE DELIMITER USAGE, SEE GETTYSBURG2.cpp
 
 // Prototype our check_length function to be used later
 // Check_length does not have a return value, but accepts and modifies a string and 3 integers
