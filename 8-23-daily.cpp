@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+// Carson Stary, CIS114
 
 int main() {
 // Define variables for professor names and info as specified by the assignment
