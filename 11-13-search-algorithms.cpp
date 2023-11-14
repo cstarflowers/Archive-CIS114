@@ -13,7 +13,7 @@ int main() {
 		left = 0,
 		right = numElements - 1,
 		ctr = 1,
-		i;
+		index;
 
 	cout << "Enter a number less than 50: ";
 	cin >> guess;
@@ -33,13 +33,13 @@ int main() {
 		ctr++;
 	}
 
-	for (i = 0; i < numElements; i++) {
-		if (numbers[i] == guess) {
+	for (index = 0; index < numElements; index++) {
+		if (numbers[index] == guess) {
 			break;
 		}
 	}
 
-	cout << endl << "Number " << guess << " found at element " << i << endl;
+	cout << endl << "Number " << guess << " found at element " << index << endl;
 	cout << "It took " << ctr << " comparison(s) using the Binary search algorithm." << endl;
 	ctr = 1;
 
@@ -50,6 +50,6 @@ int main() {
 		ctr++;
 	}
 
-	cout << endl << "Number " << guess << " found at element " << i << endl;
+	cout << endl << "Number " << guess << " found at element " << index << endl;
 	cout << "It took " << ctr << " comparison(s) using the Linear search algorithm." << endl;
 }
