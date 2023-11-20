@@ -3,7 +3,7 @@
 #include <string>
 
 using namespace std;
-// Carson Stary, CIS114
+// Carson Stary, CIS114, Array Pointers
 
 int main() {
 	const int PLAYERS = 3;
