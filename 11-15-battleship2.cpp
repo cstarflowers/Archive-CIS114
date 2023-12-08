@@ -73,13 +73,13 @@ int main() {
 			// If guess is Guess X and GuessY equals a ship coordinate (S) print out Hit! -G
 			// Decrease requiredHits left by 1 -G
 				if (correctBoard[guessY][guessX] == 'S') {
-					cout << "Hit!" << endl;
+					cout << "Hit (#" << (shipCount+-requiredHits) + 1 << "/" << shipCount << ")" << endl;
 					requiredHits -= 1;
 					guessBoard[guessY][guessX] = 'S';
 				}
 			// If else, print out miss -G
 				else {
-					cout << "Miss." << endl;
+					cout << "Miss (#" << (shipCount + -requiredHits) << "/" << shipCount << ")" << endl;
 					guessBoard[guessY][guessX] = '/';
 
 				}
@@ -91,7 +91,7 @@ int main() {
 		cout << "You sunk 5 ships in " << userGuesses << " moves (" << shipCount << " hits)!" << endl;
 	}
 	// Else if shipFile does not exist: -C
-	{
+	else {
 		// Print out an error message -C
 		cout << "Error: File does not exist!" << endl;
 	}
@@ -112,3 +112,4 @@ void printBoard() {
 	}
 	cout << endl;
 }
+
