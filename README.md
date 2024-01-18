@@ -6,4 +6,4 @@ These programs may be used for reference under the following stipulations:
 - Appropriate citations are added to your submission where appropriate
 
 
-NOTE: SOME FILES IN THIS ARCHIVE ARE USER SUBMITTED FOR CONVENIENCE; DUPLICATES ARE NAMED WITH THE FORMAT "date-name2.cpp"
+*NOTE: SOME FILES IN THIS ARCHIVE ARE USER SUBMITTED FOR CONVENIENCE; DUPLICATES ARE NAMED WITH THE FORMAT "date-name2.cpp"*
